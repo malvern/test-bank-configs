@@ -3,6 +3,9 @@ spring:
   config:
     activate:
       on-profile: dev
+    label: dev-profile
+    state: initial
+    version: 1.0
 name:
   test: testing-profile
 ---
