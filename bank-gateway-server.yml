@@ -1,3 +1,7 @@
+
+spring:
+  application:
+    name: bank-gateway-server
 ---
 spring:
   config:
