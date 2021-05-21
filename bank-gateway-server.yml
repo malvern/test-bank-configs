@@ -15,6 +15,11 @@ spring:
             predicates:
             - Method=GET,POST,PATCH
             - Path=api/kyc
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 ---
 spring:
   config:
