@@ -3,11 +3,14 @@ spring:
   config:
     activate:
       on-profile: dev
-    label: dev-profile
-    state: initial
-    version: 1.0
-name:
-  test: testing-profile
+  cloud:
+    gateway:
+        routes:
+          - id: kyc
+            uri: http://localhost:8004
+            predicates:
+            - Method=GET,POST,PATCH
+            - Path=api/kyc
 ---
 spring:
   config:
